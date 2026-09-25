@@ -2,7 +2,6 @@
 <html lang="es">
  
 <head>
- 
 <meta charset="UTF-8">
  
 <meta
@@ -16,7 +15,6 @@ content="#ed1c2e"
 >
  
 <title>Datos bancarios</title>
- 
 </head>
  
  
@@ -35,8 +33,6 @@ align-items:center;
 ">
  
  
-<!-- TARJETA PRINCIPAL -->
- 
 <main style="
 width:100%;
 max-width:430px;
@@ -51,9 +47,9 @@ box-shadow:0 8px 24px rgba(0,0,0,0.16);
 <!-- LOGO -->
  
 <div style="
-background:#ffffff;
 text-align:center;
 padding:5px 10px 4px;
+background:#ffffff;
 ">
  
 <img
@@ -71,7 +67,7 @@ margin:0 auto;
 </div>
  
  
-<!-- ENCABEZADO ROJO -->
+<!-- ENCABEZADO -->
  
 <div style="
 background:#ed1c2e;
@@ -85,7 +81,9 @@ font-size:17px;
 line-height:1.1;
 font-weight:700;
 ">
+ 
 Datos bancarios
+ 
 </div>
  
 </div>
@@ -105,7 +103,7 @@ text-align:center;
 color:#666666;
 font-size:9px;
 line-height:1;
-font-weight:600;
+font-weight:500;
 letter-spacing:0.4px;
 margin:2px 0 7px;
 ">
@@ -115,7 +113,7 @@ INFORMACIÓN PARA TRANSFERENCIA
 </div>
  
  
-<!-- CAJA DATOS -->
+<!-- CAJA DE DATOS -->
  
 <div style="
 width:100%;
@@ -130,32 +128,37 @@ overflow:hidden;
 <!-- NOMBRE -->
  
 <div style="
-display:flex;
+display:grid;
+grid-template-columns:125px 1fr;
 align-items:center;
-justify-content:space-between;
-gap:10px;
-padding:7px 11px;
+gap:8px;
+padding:7px 10px;
 border-bottom:1px solid #dddddd;
 ">
  
-<span style="
+<div style="
 color:#6f6f6f;
 font-size:10px;
 font-weight:400;
-line-height:1;
+line-height:1.1;
+text-align:left;
 ">
-NOMBRE
-</span>
  
-<span style="
+NOMBRE
+ 
+</div>
+ 
+<div style="
 color:#000000;
 font-size:14px;
 font-weight:700;
 line-height:1.1;
-text-align:right;
+text-align:left;
 ">
+ 
 NATHALY IVON
-</span>
+ 
+</div>
  
 </div>
  
@@ -163,32 +166,37 @@ NATHALY IVON
 <!-- RUT -->
  
 <div style="
-display:flex;
+display:grid;
+grid-template-columns:125px 1fr;
 align-items:center;
-justify-content:space-between;
-gap:10px;
-padding:7px 11px;
+gap:8px;
+padding:7px 10px;
 border-bottom:1px solid #dddddd;
 ">
  
-<span style="
+<div style="
 color:#6f6f6f;
 font-size:10px;
 font-weight:400;
-line-height:1;
+line-height:1.1;
+text-align:left;
 ">
-RUT
-</span>
  
-<span style="
+RUT
+ 
+</div>
+ 
+<div style="
 color:#000000;
 font-size:14px;
 font-weight:700;
 line-height:1.1;
-text-align:right;
+text-align:left;
 ">
+ 
 19370505-7
-</span>
+ 
+</div>
  
 </div>
  
@@ -196,32 +204,37 @@ text-align:right;
 <!-- BANCO -->
  
 <div style="
-display:flex;
+display:grid;
+grid-template-columns:125px 1fr;
 align-items:center;
-justify-content:space-between;
-gap:10px;
-padding:7px 11px;
+gap:8px;
+padding:7px 10px;
 border-bottom:1px solid #dddddd;
 ">
  
-<span style="
+<div style="
 color:#6f6f6f;
 font-size:10px;
 font-weight:400;
-line-height:1;
+line-height:1.1;
+text-align:left;
 ">
-BANCO
-</span>
  
-<span style="
+BANCO
+ 
+</div>
+ 
+<div style="
 color:#000000;
 font-size:14px;
 font-weight:700;
 line-height:1.1;
-text-align:right;
+text-align:left;
 ">
+ 
 BANCO ESTADO
-</span>
+ 
+</div>
  
 </div>
  
@@ -229,32 +242,37 @@ BANCO ESTADO
 <!-- TIPO DE CUENTA -->
  
 <div style="
-display:flex;
+display:grid;
+grid-template-columns:125px 1fr;
 align-items:center;
-justify-content:space-between;
-gap:10px;
-padding:7px 11px;
+gap:8px;
+padding:7px 10px;
 border-bottom:1px solid #dddddd;
 ">
  
-<span style="
+<div style="
 color:#6f6f6f;
 font-size:10px;
 font-weight:400;
-line-height:1;
+line-height:1.1;
+text-align:left;
 ">
-TIPO DE CUENTA
-</span>
  
-<span style="
+TIPO DE CUENTA
+ 
+</div>
+ 
+<div style="
 color:#000000;
 font-size:14px;
 font-weight:700;
 line-height:1.1;
-text-align:right;
+text-align:left;
 ">
+ 
 CUENTA RUT
-</span>
+ 
+</div>
  
 </div>
  
@@ -262,31 +280,36 @@ CUENTA RUT
 <!-- NÚMERO DE CUENTA -->
  
 <div style="
-display:flex;
+display:grid;
+grid-template-columns:125px 1fr;
 align-items:center;
-justify-content:space-between;
-gap:10px;
-padding:7px 11px;
+gap:8px;
+padding:7px 10px;
 ">
  
-<span style="
+<div style="
 color:#6f6f6f;
 font-size:10px;
 font-weight:400;
-line-height:1;
+line-height:1.1;
+text-align:left;
 ">
-NÚMERO DE CUENTA
-</span>
  
-<span style="
+NÚMERO DE CUENTA
+ 
+</div>
+ 
+<div style="
 color:#000000;
 font-size:14px;
 font-weight:700;
 line-height:1.1;
-text-align:right;
+text-align:left;
 ">
+ 
 19370505
-</span>
+ 
+</div>
  
 </div>
  
@@ -294,7 +317,7 @@ text-align:right;
 </div>
  
  
-<!-- MENSAJE COPIADO -->
+<!-- ESTADO DE COPIA -->
  
 <div
 id="estado"
@@ -306,8 +329,8 @@ color:#159447;
 font-size:9px;
 line-height:1.1;
 font-weight:600;
-"
-></div>
+">
+</div>
  
  
 <!-- BOTÓN -->
@@ -315,7 +338,6 @@ font-weight:600;
 <button
 id="botonCopiar"
 type="button"
- 
 style="
 display:block;
 width:100%;
@@ -331,8 +353,7 @@ line-height:1;
 font-weight:700;
 cursor:pointer;
 box-shadow:0 3px 9px rgba(237,28,46,0.25);
-"
->
+">
  
 📋 COPIAR DATOS BANCARIOS
  
@@ -346,26 +367,12 @@ box-shadow:0 3px 9px rgba(237,28,46,0.25);
  
 <script>
  
- 
-/*
-==================================
-DATOS QUE SE COPIAN
-SIN ETIQUETAS
-==================================
-*/
- 
 const datosBancarios = `NATHALY IVON
 19370505-7
 BANCO ESTADO
 CUENTA RUT
 19370505`;
  
- 
-/*
-==================================
-FUNCIÓN COPIAR
-==================================
-*/
  
 async function copiarDatos() {
  
@@ -392,11 +399,7 @@ estado.textContent = "";
 }
  
  
-/*
-==================================
-BOTÓN MANUAL
-==================================
-*/
+/* BOTÓN MANUAL */
  
 document
 .getElementById("botonCopiar")
@@ -406,17 +409,12 @@ copiarDatos
 );
  
  
-/*
-==================================
-INTENTO DE COPIA AUTOMÁTICA
-==================================
-*/
+/* INTENTO AUTOMÁTICO */
  
 window.addEventListener(
 "load",
 copiarDatos
 );
- 
  
 </script>
  
