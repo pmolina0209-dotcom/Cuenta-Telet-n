@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+ 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ed1c2e">
+ 
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+>
+ 
+<meta
+name="theme-color"
+content="#ed1c2e"
+>
  
 <title>Datos bancarios</title>
+ 
 </head>
+ 
  
 <body style="
 margin:0;
 padding:0;
+width:100%;
 min-height:100vh;
+min-height:100dvh;
+box-sizing:border-box;
 background:#eeeeee;
 font-family:Arial,Helvetica,sans-serif;
 display:flex;
@@ -19,51 +33,56 @@ justify-content:center;
 align-items:center;
 ">
  
-<div style="
-width:100%;
-max-width:430px;
-margin:20px;
+ 
+<!-- TARJETA PRINCIPAL -->
+ 
+<main style="
+width:calc(100% - 24px);
+max-width:400px;
+margin:12px auto;
 background:#ffffff;
-border-radius:25px;
+border-radius:22px;
 overflow:hidden;
-box-shadow:0 15px 40px rgba(0,0,0,0.20);
+box-shadow:0 12px 35px rgba(0,0,0,0.18);
 ">
+ 
  
 <!-- LOGO -->
  
 <div style="
 background:#ffffff;
 text-align:center;
-padding:25px 20px 18px 20px;
+padding:20px 20px 16px 20px;
 ">
  
 <img
 src="LOGO.png"
 alt="Logo"
 style="
-width:185px;
-max-width:70%;
-height:auto;
 display:block;
-margin:auto;
+width:150px;
+max-width:55%;
+height:auto;
+margin:0 auto;
 "
 >
  
 </div>
  
  
-<!-- CABECERA ROJA -->
+<!-- CABECERA -->
  
 <div style="
 background:#ed1c2e;
 color:#ffffff;
 text-align:center;
-padding:20px;
+padding:17px 15px;
 ">
  
 <div style="
-font-size:26px;
-font-weight:bold;
+font-size:23px;
+line-height:1.2;
+font-weight:700;
 ">
 Datos bancarios
 </div>
@@ -74,28 +93,33 @@ Datos bancarios
 <!-- CONTENIDO -->
  
 <div style="
-padding:25px 22px 30px 22px;
+padding:21px 17px 23px 17px;
 ">
  
  
+<!-- SUBTÍTULO -->
+ 
 <div style="
 text-align:center;
-color:#666666;
-font-size:13px;
+color:#686868;
+font-size:12px;
+line-height:1.4;
 font-weight:bold;
-letter-spacing:1px;
-margin-bottom:22px;
+letter-spacing:0.7px;
+margin-bottom:18px;
 ">
 INFORMACIÓN PARA TRANSFERENCIA
 </div>
  
  
-<!-- CAJA DE DATOS -->
+<!-- DATOS -->
  
 <div style="
+width:100%;
+box-sizing:border-box;
 background:#f7f7f7;
-border-radius:15px;
-border-left:6px solid #ed1c2e;
+border-radius:14px;
+border-left:5px solid #ed1c2e;
 overflow:hidden;
 ">
  
@@ -103,22 +127,24 @@ overflow:hidden;
 <!-- NOMBRE -->
  
 <div style="
-padding:15px 17px;
+padding:12px 15px;
 border-bottom:1px solid #dddddd;
 ">
  
 <div style="
 color:#777777;
-font-size:12px;
+font-size:11px;
+line-height:1.2;
 font-weight:bold;
-margin-bottom:5px;
+margin-bottom:4px;
 ">
 NOMBRE
 </div>
  
 <div style="
 color:#222222;
-font-size:18px;
+font-size:17px;
+line-height:1.4;
 font-weight:bold;
 ">
 NATHALY IVON
@@ -130,22 +156,24 @@ NATHALY IVON
 <!-- RUT -->
  
 <div style="
-padding:15px 17px;
+padding:12px 15px;
 border-bottom:1px solid #dddddd;
 ">
  
 <div style="
 color:#777777;
-font-size:12px;
+font-size:11px;
+line-height:1.2;
 font-weight:bold;
-margin-bottom:5px;
+margin-bottom:4px;
 ">
 RUT
 </div>
  
 <div style="
 color:#222222;
-font-size:18px;
+font-size:17px;
+line-height:1.4;
 font-weight:bold;
 ">
 19370505-7
@@ -157,22 +185,24 @@ font-weight:bold;
 <!-- BANCO -->
  
 <div style="
-padding:15px 17px;
+padding:12px 15px;
 border-bottom:1px solid #dddddd;
 ">
  
 <div style="
 color:#777777;
-font-size:12px;
+font-size:11px;
+line-height:1.2;
 font-weight:bold;
-margin-bottom:5px;
+margin-bottom:4px;
 ">
 BANCO
 </div>
  
 <div style="
 color:#222222;
-font-size:18px;
+font-size:17px;
+line-height:1.4;
 font-weight:bold;
 ">
 BANCO ESTADO
@@ -184,22 +214,24 @@ BANCO ESTADO
 <!-- TIPO DE CUENTA -->
  
 <div style="
-padding:15px 17px;
+padding:12px 15px;
 border-bottom:1px solid #dddddd;
 ">
  
 <div style="
 color:#777777;
-font-size:12px;
+font-size:11px;
+line-height:1.2;
 font-weight:bold;
-margin-bottom:5px;
+margin-bottom:4px;
 ">
 TIPO DE CUENTA
 </div>
  
 <div style="
 color:#222222;
-font-size:18px;
+font-size:17px;
+line-height:1.4;
 font-weight:bold;
 ">
 CUENTA RUT
@@ -211,21 +243,23 @@ CUENTA RUT
 <!-- NÚMERO DE CUENTA -->
  
 <div style="
-padding:15px 17px;
+padding:12px 15px;
 ">
  
 <div style="
 color:#777777;
-font-size:12px;
+font-size:11px;
+line-height:1.2;
 font-weight:bold;
-margin-bottom:5px;
+margin-bottom:4px;
 ">
 NÚMERO DE CUENTA
 </div>
  
 <div style="
 color:#222222;
-font-size:18px;
+font-size:17px;
+line-height:1.4;
 font-weight:bold;
 ">
 19370505
@@ -236,18 +270,20 @@ font-weight:bold;
 </div>
  
  
-<!-- MENSAJE DE COPIA -->
+<!-- ESTADO -->
  
 <div
 id="estado"
 style="
-min-height:25px;
-margin:18px 0 14px 0;
+min-height:22px;
+margin:15px 0 10px 0;
 text-align:center;
 color:#159447;
-font-size:14px;
+font-size:13px;
+line-height:1.4;
 font-weight:bold;
-">
+"
+>
 </div>
  
  
@@ -256,19 +292,21 @@ font-weight:bold;
 <button
 id="botonCopiar"
 type="button"
- 
 style="
+display:block;
 width:100%;
+box-sizing:border-box;
 border:none;
-border-radius:14px;
-padding:17px 15px;
+border-radius:13px;
+padding:16px 12px;
 background:#ed1c2e;
 color:#ffffff;
 font-family:Arial,Helvetica,sans-serif;
-font-size:17px;
+font-size:16px;
+line-height:1.2;
 font-weight:bold;
 cursor:pointer;
-box-shadow:0 6px 16px rgba(237,28,46,0.30);
+box-shadow:0 6px 16px rgba(237,28,46,0.28);
 "
 >
 📋 COPIAR DATOS BANCARIOS
@@ -277,23 +315,10 @@ box-shadow:0 6px 16px rgba(237,28,46,0.30);
  
 </div>
  
-</div>
+</main>
  
  
 <script>
- 
-/*
-SOLO ESTOS VALORES SE COPIAN.
- 
-LAS ETIQUETAS:
-NOMBRE
-RUT
-BANCO
-TIPO DE CUENTA
-NÚMERO DE CUENTA
- 
-NO SE COPIAN.
-*/
  
 const datosBancarios = `NATHALY IVON
 19370505-7
@@ -302,7 +327,7 @@ CUENTA RUT
 19370505`;
  
  
-/* COPIAR */
+/* COPIAR DATOS */
  
 async function copiarDatos() {
  
@@ -339,7 +364,7 @@ copiarDatos
 );
  
  
-/* INTENTO AUTOMÁTICO AL ABRIR */
+/* INTENTO AUTOMÁTICO */
  
 window.addEventListener(
 "load",
@@ -348,5 +373,7 @@ copiarDatos
  
 </script>
  
+ 
 </body>
+ 
 </html>
