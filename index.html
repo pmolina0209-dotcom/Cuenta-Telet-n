@@ -1,406 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
- 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-<title>Datos bancarios</title>
- 
-<style>
-* {
-box-sizing: border-box;
-}
- 
-body {
-margin: 0;
-min-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 20px;
- 
-font-family: Arial, Helvetica, sans-serif;
- 
-background: linear-gradient(
-135deg,
-#ffffff 0%,
-#f2f2f2 100%
-);
- 
-color: #1c1c1c;
-}
- 
-.tarjeta {
-width: 100%;
-max-width: 430px;
- 
-background: #ffffff;
- 
-border-radius: 24px;
-overflow: hidden;
- 
-box-shadow: 0 15px 45px rgba(0, 0, 0, 0.18);
-border: 1px solid #eeeeee;
-}
- 
-/* LOGO */
- 
-.logo-container {
-background: #ffffff;
-padding: 25px 20px 15px;
-text-align: center;
-}
- 
-.logo {
-width: 190px;
-max-width: 65%;
-height: auto;
-display: block;
-margin: 0 auto;
-}
- 
-/* CABECERA */
- 
-.cabecera {
-background: linear-gradient(
-135deg,
-#ef3340,
-#d92736
-);
- 
-color: white;
-text-align: center;
-padding: 18px 20px;
-}
- 
-.cabecera h1 {
-margin: 0;
-font-size: 25px;
-font-weight: 700;
-}
- 
-/* CONTENIDO */
- 
-.contenido {
-padding: 27px 22px 30px;
-}
- 
-.subtitulo {
-text-align: center;
- 
-font-size: 14px;
-color: #666666;
- 
-margin-bottom: 22px;
- 
-text-transform: uppercase;
-letter-spacing: 1px;
-font-weight: bold;
-}
- 
-/* BLOQUE DATOS */
- 
-.datos {
-background: #f7f7f7;
- 
-border-left: 5px solid #ef3340;
-border-radius: 14px;
- 
-overflow: hidden;
- 
-margin-bottom: 22px;
-}
- 
-.fila {
-padding: 14px 16px;
-border-bottom: 1px solid #dddddd;
-}
- 
-.fila:last-child {
-border-bottom: none;
-}
- 
-.etiqueta {
-display: block;
- 
-color: #777777;
- 
-font-size: 12px;
-font-weight: bold;
- 
-margin-bottom: 4px;
- 
-text-transform: uppercase;
-}
- 
-.valor {
-display: block;
- 
-color: #1c1c1c;
- 
-font-size: 18px;
-font-weight: 700;
-}
- 
-/* ESTADO DE COPIA */
- 
-#estado {
-text-align: center;
- 
-min-height: 27px;
- 
-margin: 19px 0;
- 
-color: #333333;
- 
-font-size: 16px;
-font-weight: bold;
-}
- 
-/* BOTÓN */
- 
-#botonCopiar {
-width: 100%;
- 
-border: none;
- 
-padding: 17px 20px;
- 
-border-radius: 14px;
- 
-background: linear-gradient(
-135deg,
-#ef3340,
-#d92736
-);
- 
-color: #ffffff;
- 
-font-size: 18px;
-font-weight: bold;
- 
-cursor: pointer;
- 
-box-shadow:
-0 7px 18px rgba(239, 51, 64, 0.30);
- 
-transition:
-transform 0.15s ease,
-box-shadow 0.15s ease;
-}
- 
-#botonCopiar:hover {
-box-shadow:
-0 9px 22px rgba(239, 51, 64, 0.40);
-}
- 
-#botonCopiar:active {
-transform: scale(0.97);
- 
-box-shadow:
-0 3px 10px rgba(239, 51, 64, 0.25);
-}
- 
-.ayuda {
-margin-top: 18px;
- 
-text-align: center;
- 
-color: #777777;
- 
-font-size: 12px;
-line-height: 1.5;
-}
- 
-/* MÓVILES */
- 
-@media (max-width: 480px) {
-body {
-padding: 12px;
-}
- 
-.tarjeta {
-border-radius: 20px;
-}
- 
-.logo {
-width: 165px;
-}
- 
-.cabecera h1 {
-font-size: 22px;
-}
- 
-.contenido {
-padding: 24px 18px 27px;
-}
-}
-</style>
-</head>
- 
- 
-<body>
- 
-<main class="tarjeta">
- 
-<!-- LOGO -->
- 
-<div class="logo-container">
- 
-LOGO.png
- 
-</div>
- 
- 
-<!-- CABECERA -->
- 
-<div class="cabecera">
- 
-<h1>
-Datos bancarios
-</h1>
- 
-</div>
- 
- 
-<!-- CONTENIDO -->
- 
-<div class="contenido">
- 
-<div class="subtitulo">
-Información para transferencia
-</div>
- 
- 
-<!-- DATOS MOSTRADOS EN PANTALLA -->
- 
-<div class="datos">
- 
-<div class="fila">
- 
-<span class="etiqueta">
-Nombre
-</span>
- 
-<span class="valor">
-NATHALY IVON
-</span>
- 
-</div>
- 
- 
-<div class="fila">
- 
-<span class="etiqueta">
-RUT
-</span>
- 
-<span class="valor">
-19370505-7
-</span>
- 
-</div>
- 
- 
-<div class="fila">
- 
-<span class="etiqueta">
-Banco
-</span>
- 
-<span class="valor">
-BANCO ESTADO
-</span>
- 
-</div>
- 
- 
-<div class="fila">
- 
-<span class="etiqueta">
-Tipo de cuenta
-</span>
- 
-<span class="valor">
-CUENTA RUT
-</span>
- 
-</div>
- 
- 
-<div class="fila">
- 
-<span class="etiqueta">
-Número de cuenta
-</span>
- 
-<span class="valor">
-19370505
-</span>
- 
-</div>
- 
-</div>
- 
- 
-<!-- MENSAJE -->
- 
-<div id="estado">
-📋 Preparando datos...
-</div>
- 
- 
-<!-- BOTÓN DE RESPALDO -->
- 
-<button
-id="botonCopiar"
-type="button"
-onclick="copiarDatos()"
->
-📋 COPIAR DATOS BANCARIOS
-</button>
- 
- 
-<div class="ayuda">
-Si la copia automática no funciona,
-pulsa el botón para copiar los datos.
-</div>
- 
-</div>
- 
-</main>
- 
- 
-<script>
- 
-/*
-==================================================
-IMPORTANTE:
-SOLO ESTOS VALORES SE COPIARÁN AL PORTAPAPELES.
- 
-LAS ETIQUETAS NO SE COPIAN.
-==================================================
+FUNCIÓN PRINCIPAL PARA COPIAR
+=====================================================
 */
  
-const datosBancarios =
-`NATHALY IVON
-19370505-7
-BANCO ESTADO
-CUENTA RUT
-19370505`;
- 
- 
-/*
-==================================================
-FUNCIÓN DE COPIA
-==================================================
-*/
  
 async function copiarDatos() {
  
 const estado =
 document.getElementById("estado");
+ 
  
 try {
  
@@ -408,10 +15,12 @@ await navigator.clipboard.writeText(
 datosBancarios
 );
  
+ 
 estado.innerHTML =
-"✅ DATOS COPIADOS";
+"✅ DATOS COPIADOS CORRECTAMENTE";
  
 }
+ 
  
 catch (error) {
  
@@ -424,10 +33,19 @@ estado.innerHTML =
  
  
 /*
-==================================================
-INTENTO DE COPIA AL ABRIR LA PÁGINA
-==================================================
+=====================================================
+INTENTO DE COPIA AUTOMÁTICA
+=====================================================
+ 
+Al entrar en la página se intenta copiar
+automáticamente.
+ 
+Si el navegador no lo permite, queda disponible
+el botón rojo como respaldo.
+ 
+=====================================================
 */
+ 
  
 window.addEventListener(
 "load",
@@ -438,7 +56,9 @@ copiarDatos();
 }
 );
  
+ 
 </script>
+ 
  
 </body>
  
