@@ -3,338 +3,252 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ef3340">
+<meta name="theme-color" content="#ed1c2e">
  
 <title>Datos bancarios</title>
- 
-<style>
-* {
-box-sizing: border-box;
-}
- 
-body {
-margin: 0;
-min-height: 100vh;
-padding: 15px;
- 
-display: flex;
-justify-content: center;
-align-items: center;
- 
-font-family: Arial, Helvetica, sans-serif;
- 
-background: linear-gradient(
-145deg,
-#ffffff,
-#eeeeee
-);
- 
-color: #1c1c1c;
-}
- 
-.tarjeta {
-width: 100%;
-max-width: 430px;
- 
-background: #ffffff;
- 
-border-radius: 24px;
-overflow: hidden;
- 
-border: 1px solid #e8e8e8;
- 
-box-shadow:
-0 16px 45px rgba(0, 0, 0, 0.18);
-}
- 
-/* LOGO */
- 
-.logo-container {
-background: #ffffff;
- 
-padding: 25px 20px 20px;
- 
-text-align: center;
-}
- 
-.logo {
-display: block;
- 
-width: 190px;
-max-width: 65%;
- 
-height: auto;
- 
-margin: 0 auto;
-}
- 
-/* CABECERA */
- 
-.cabecera {
-padding: 18px 20px;
- 
-text-align: center;
- 
-color: #ffffff;
- 
-background: linear-gradient(
-135deg,
-#ef3340,
-#d92736
-);
-}
- 
-.cabecera h1 {
-margin: 0;
- 
-font-size: 25px;
-font-weight: bold;
-}
- 
-/* CONTENIDO */
- 
-.contenido {
-padding: 26px 22px 30px;
-}
- 
-.subtitulo {
-margin-bottom: 20px;
- 
-text-align: center;
- 
-color: #666666;
- 
-font-size: 13px;
-font-weight: bold;
- 
-letter-spacing: 1px;
- 
-text-transform: uppercase;
-}
- 
-/* DATOS */
- 
-.datos {
-overflow: hidden;
- 
-background: #f7f7f7;
- 
-border-left: 5px solid #ef3340;
- 
-border-radius: 14px;
-}
- 
-.fila {
-padding: 14px 16px;
- 
-border-bottom: 1px solid #dddddd;
-}
- 
-.fila:last-child {
-border-bottom: none;
-}
- 
-/* ETIQUETAS */
- 
-.etiqueta {
-display: block;
- 
-margin-bottom: 5px;
- 
-color: #777777;
- 
-font-size: 12px;
-font-weight: bold;
- 
-text-transform: uppercase;
-}
- 
-/* VALORES */
- 
-.valor {
-display: block;
- 
-color: #1c1c1c;
- 
-font-size: 18px;
-font-weight: bold;
-}
- 
-/* RESULTADO DE LA COPIA */
- 
-#estado {
-min-height: 26px;
- 
-margin: 18px 0 15px;
- 
-text-align: center;
- 
-color: #2e7d32;
- 
-font-size: 15px;
-font-weight: bold;
-}
- 
-/* BOTÓN */
- 
-#botonCopiar {
-width: 100%;
- 
-padding: 17px 18px;
- 
-border: none;
-border-radius: 14px;
- 
-background: linear-gradient(
-135deg,
-#ef3340,
-#d92736
-);
- 
-color: #ffffff;
- 
-font-size: 17px;
-font-weight: bold;
- 
-cursor: pointer;
- 
-box-shadow:
-0 7px 18px rgba(239, 51, 64, 0.28);
-}
- 
-#botonCopiar:hover {
-filter: brightness(1.05);
-}
- 
-#botonCopiar:active {
-transform: scale(0.98);
-}
- 
-/* MÓVIL */
- 
-@media (max-width: 480px) {
-body {
-padding: 10px;
-}
- 
-.tarjeta {
-border-radius: 20px;
-}
- 
-.logo {
-width: 165px;
-}
- 
-.cabecera h1 {
-font-size: 22px;
-}
- 
-.contenido {
-padding: 23px 18px 26px;
-}
- 
-.valor {
-font-size: 17px;
-}
-}
-</style>
 </head>
  
-<body>
+<body style="
+margin:0;
+padding:0;
+min-height:100vh;
+background:#eeeeee;
+font-family:Arial,Helvetica,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+">
  
-<main class="tarjeta">
+<div style="
+width:100%;
+max-width:430px;
+margin:20px;
+background:#ffffff;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 15px 40px rgba(0,0,0,0.20);
+">
  
 <!-- LOGO -->
  
-<div class="logo-container">
+<div style="
+background:#ffffff;
+text-align:center;
+padding:25px 20px 18px 20px;
+">
+ 
 <img
 src="LOGO.png"
 alt="Logo"
-class="logo"
+style="
+width:185px;
+max-width:70%;
+height:auto;
+display:block;
+margin:auto;
+"
 >
+ 
 </div>
  
  
-<!-- CABECERA -->
+<!-- CABECERA ROJA -->
  
-<div class="cabecera">
-<h1>Datos bancarios</h1>
+<div style="
+background:#ed1c2e;
+color:#ffffff;
+text-align:center;
+padding:20px;
+">
+ 
+<div style="
+font-size:26px;
+font-weight:bold;
+">
+Datos bancarios
+</div>
+ 
 </div>
  
  
 <!-- CONTENIDO -->
  
-<div class="contenido">
+<div style="
+padding:25px 22px 30px 22px;
+">
  
-<div class="subtitulo">
-Información para transferencia
+ 
+<div style="
+text-align:center;
+color:#666666;
+font-size:13px;
+font-weight:bold;
+letter-spacing:1px;
+margin-bottom:22px;
+">
+INFORMACIÓN PARA TRANSFERENCIA
 </div>
  
  
-<!-- DATOS VISIBLES -->
+<!-- CAJA DE DATOS -->
  
-<div class="datos">
+<div style="
+background:#f7f7f7;
+border-radius:15px;
+border-left:6px solid #ed1c2e;
+overflow:hidden;
+">
  
-<div class="fila">
-<span class="etiqueta">
-Nombre
-</span>
  
-<span class="valor">
+<!-- NOMBRE -->
+ 
+<div style="
+padding:15px 17px;
+border-bottom:1px solid #dddddd;
+">
+ 
+<div style="
+color:#777777;
+font-size:12px;
+font-weight:bold;
+margin-bottom:5px;
+">
+NOMBRE
+</div>
+ 
+<div style="
+color:#222222;
+font-size:18px;
+font-weight:bold;
+">
 NATHALY IVON
-</span>
+</div>
+ 
 </div>
  
  
-<div class="fila">
-<span class="etiqueta">
+<!-- RUT -->
+ 
+<div style="
+padding:15px 17px;
+border-bottom:1px solid #dddddd;
+">
+ 
+<div style="
+color:#777777;
+font-size:12px;
+font-weight:bold;
+margin-bottom:5px;
+">
 RUT
-</span>
+</div>
  
-<span class="valor">
+<div style="
+color:#222222;
+font-size:18px;
+font-weight:bold;
+">
 19370505-7
-</span>
+</div>
+ 
 </div>
  
  
-<div class="fila">
-<span class="etiqueta">
-Banco
-</span>
+<!-- BANCO -->
  
-<span class="valor">
+<div style="
+padding:15px 17px;
+border-bottom:1px solid #dddddd;
+">
+ 
+<div style="
+color:#777777;
+font-size:12px;
+font-weight:bold;
+margin-bottom:5px;
+">
+BANCO
+</div>
+ 
+<div style="
+color:#222222;
+font-size:18px;
+font-weight:bold;
+">
 BANCO ESTADO
-</span>
+</div>
+ 
 </div>
  
  
-<div class="fila">
-<span class="etiqueta">
-Tipo de cuenta
-</span>
+<!-- TIPO DE CUENTA -->
  
-<span class="valor">
+<div style="
+padding:15px 17px;
+border-bottom:1px solid #dddddd;
+">
+ 
+<div style="
+color:#777777;
+font-size:12px;
+font-weight:bold;
+margin-bottom:5px;
+">
+TIPO DE CUENTA
+</div>
+ 
+<div style="
+color:#222222;
+font-size:18px;
+font-weight:bold;
+">
 CUENTA RUT
-</span>
+</div>
+ 
 </div>
  
  
-<div class="fila">
-<span class="etiqueta">
-Número de cuenta
-</span>
+<!-- NÚMERO DE CUENTA -->
  
-<span class="valor">
+<div style="
+padding:15px 17px;
+">
+ 
+<div style="
+color:#777777;
+font-size:12px;
+font-weight:bold;
+margin-bottom:5px;
+">
+NÚMERO DE CUENTA
+</div>
+ 
+<div style="
+color:#222222;
+font-size:18px;
+font-weight:bold;
+">
 19370505
-</span>
 </div>
  
 </div>
  
+</div>
  
-<!-- MENSAJE SOLO CUANDO SE COPIA -->
  
-<div id="estado"></div>
+<!-- MENSAJE DE COPIA -->
+ 
+<div
+id="estado"
+style="
+min-height:25px;
+margin:18px 0 14px 0;
+text-align:center;
+color:#159447;
+font-size:14px;
+font-weight:bold;
+">
+</div>
  
  
 <!-- BOTÓN -->
@@ -342,20 +256,43 @@ Número de cuenta
 <button
 id="botonCopiar"
 type="button"
+ 
+style="
+width:100%;
+border:none;
+border-radius:14px;
+padding:17px 15px;
+background:#ed1c2e;
+color:#ffffff;
+font-family:Arial,Helvetica,sans-serif;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 6px 16px rgba(237,28,46,0.30);
+"
 >
 📋 COPIAR DATOS BANCARIOS
 </button>
  
+ 
 </div>
  
-</main>
+</div>
  
  
 <script>
  
 /*
-SOLO ESTOS DATOS SE COPIAN.
-NO SE COPIAN LAS ETIQUETAS.
+SOLO ESTOS VALORES SE COPIAN.
+ 
+LAS ETIQUETAS:
+NOMBRE
+RUT
+BANCO
+TIPO DE CUENTA
+NÚMERO DE CUENTA
+ 
+NO SE COPIAN.
 */
  
 const datosBancarios = `NATHALY IVON
@@ -364,6 +301,8 @@ BANCO ESTADO
 CUENTA RUT
 19370505`;
  
+ 
+/* COPIAR */
  
 async function copiarDatos() {
  
@@ -379,13 +318,9 @@ datosBancarios
 estado.textContent =
 "✅ DATOS COPIADOS CORRECTAMENTE";
  
-} catch (error) {
+}
  
-/*
-Si la copia automática es bloqueada,
-no mostramos ningún mensaje.
-El botón permanece disponible.
-*/
+catch (error) {
  
 estado.textContent = "";
  
@@ -394,9 +329,7 @@ estado.textContent = "";
 }
  
  
-/*
-COPIA MANUAL MEDIANTE EL BOTÓN
-*/
+/* BOTÓN MANUAL */
  
 document
 .getElementById("botonCopiar")
@@ -406,10 +339,7 @@ copiarDatos
 );
  
  
-/*
-INTENTO DE COPIA AUTOMÁTICA
-AL ABRIR LA PÁGINA
-*/
+/* INTENTO AUTOMÁTICO AL ABRIR */
  
 window.addEventListener(
 "load",
